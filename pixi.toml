@@ -2,7 +2,7 @@
 authors = ["Alex-Lewandowski <aflewandowski@alaska.edu>"]
 channels = ["conda-forge"]
 name = "NISAR_GCOV_Cookbook"
-platforms = ["linux-64", "osx-64", "osx-arm64"]
+platforms = ["linux-64", "osx-64"]
 version = "0.1.0"
 
 [tasks]
