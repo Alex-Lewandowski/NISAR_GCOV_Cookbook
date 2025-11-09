@@ -28,4 +28,4 @@ project:
       binder:
         repo: ASFOpenSARlab/NISAR_GCOV_Cookbook
 site:
-  template: book-theme
+  template: sphinx-pythia-theme
