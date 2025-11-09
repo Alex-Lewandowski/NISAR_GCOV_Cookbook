@@ -27,5 +27,6 @@ project:
   jupyter:
       binder:
         repo: ASFOpenSARlab/NISAR_GCOV_Cookbook
-site:
-  template: sphinx-pythia-theme
+html:
+  theme:
+    name: sphinx-pythia-theme
