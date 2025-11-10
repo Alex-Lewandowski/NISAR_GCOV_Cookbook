@@ -27,3 +27,6 @@ project:
   jupyter:
       binder:
         repo: ASFOpenSARlab/NISAR_GCOV_Cookbook
+site:
+  options:
+    favicon: favicon.ico
