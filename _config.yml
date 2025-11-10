@@ -1,0 +1,5 @@
+execute:
+  execute_notebooks: binder
+  timeout: 1200
+  allow_errors: True
+  
