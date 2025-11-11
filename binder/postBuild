@@ -1,24 +1,30 @@
 #!/usr/bin/env bash
 set -euxo pipefail
 
-cd "${REPO_DIR:-/home/jovyan}"
+export PATH="${NB_PYTHON_PREFIX}/bin:${CONDA_DIR}/bin:${PATH}"
+hash -r
 
-# Fast path: use locked envs if present
+echo "=== POSTBUILD START ==="
+echo "NB_PYTHON_PREFIX=${NB_PYTHON_PREFIX:-<unset>}"
+which python
+python --version
+which pixi
+pixi --version
+
+# Install/resolve your Pixi workspace (use lock if present)
+cd "${REPO_DIR:-/home/jovyan}"
 if [ -f pixi.lock ]; then
   pixi install --locked || pixi install
 else
   pixi install
 fi
 
-# List the envs you want available as kernels
-ENVS=("default" "isce3")
+# --- Register kernels for each Pixi env you need ---
+pixi run -e isce3 -- python -m ipykernel install --user \
+  --name "isce3" --display-name "Pixi (isce3)"
 
-for E in "${ENVS[@]}"; do
-  if pixi info -e "$E" >/dev/null 2>&1; then
-    # Install a kernel from each Pixi env
-    pixi run -e "$E" -- python -m ipykernel install --user \
-      --name "pixi-${E}" --display-name "Pixi (${E})"
-  fi
-done
+pixi run -e default -- python -m ipykernel install --user \
+  --name "python3" --display-name "Python 3 (default)"
 
+echo "=== INSTALLED KERNELS ==="
 jupyter kernelspec list
