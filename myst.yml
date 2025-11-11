@@ -26,7 +26,7 @@ project:
         - file: notebooks/NISAR_GCOV_SARChangeDetectionMethods.ipynb
   jupyter:
     binder:
-      url: "https://binder.pangeo.io"
+      url: "https://mybinder.org"
 site:
   options:
     favicon: favicon.ico
