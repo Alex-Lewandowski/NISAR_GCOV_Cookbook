@@ -2,4 +2,10 @@ execute:
   execute_notebooks: binder
   timeout: 1200
   allow_errors: True
-binderhub_url: https://binder.projectpythia.org/
+
+sphinx:
+  config:
+    html_theme: book-theme
+    html_theme_options:
+      launch_buttons:
+        binderhub_url: https://binder.projectpythia.org/
