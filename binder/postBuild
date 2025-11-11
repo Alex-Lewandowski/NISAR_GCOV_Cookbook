@@ -24,7 +24,7 @@ pixi run -e isce3 -- python -m ipykernel install --user \
   --name "pixi-isce3" --display-name "Pixi (isce3)"
 
 pixi run -e default -- python -m ipykernel install --user \
-  --name "pixi-python3" --display-name "Python 3 (default)"
+  --name "pixi-python3" --display-name "Pixi Python 3 (default)"
 
 echo "=== INSTALLED KERNELS ==="
 jupyter kernelspec list
