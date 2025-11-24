@@ -33,6 +33,8 @@ project:
 #   allow_errors: True
 #   exclude_patterns:
 #     - "notebooks/NISAR_GCOV*"
+execute:
+  execute_notebooks: "off"
 site:
   options:
     favicon: favicon.ico
