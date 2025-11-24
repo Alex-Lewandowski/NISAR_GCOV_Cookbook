@@ -27,12 +27,12 @@ project:
   jupyter:
     binder:
       url: "https://mybinder.org"
-execute:
-  execute_notebooks: cache
-  timeout: 1200
-  allow_errors: True
-  exclude_patterns:
-    - "notebooks/NISAR_GCOV*"
+# execute:
+#   execute_notebooks: cache
+#   timeout: 1200
+#   allow_errors: True
+#   exclude_patterns:
+#     - "notebooks/NISAR_GCOV*"
 site:
   options:
     favicon: favicon.ico
