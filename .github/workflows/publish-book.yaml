@@ -12,6 +12,7 @@ jobs:
     uses: ASFOpenSARlab/cookbook-actions/.github/workflows/build-book.yaml@main
     with:
       environment_manager: pixi
+      build_command: 'myst build --html'
 
   deploy:
     needs: build
