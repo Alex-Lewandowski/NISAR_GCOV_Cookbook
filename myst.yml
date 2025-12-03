@@ -7,23 +7,31 @@ project:
   github: https://github.com/ASFOpenSARlab/NISAR_GCOV_Cookbook
   authors:
     - name: The Alaska Satellite Facility
-  license: BSD-3
+  license: BSD-3-Clause
   copyright: '2025'
   toc:
     - file: README.md
-    - title: Introduction to NISAR GCOV data
+    - title: About NISAR GCOV data
       children:
       - file: notebooks/GCOV_intro.md
       - url: https://nisar.asf.earthdatacloud.nasa.gov/NISAR-SAMPLE-DATA/DOCS/NISAR_D-102274_RevE_NASA_SDS_Product_Specification_L2_GCOV_Nov8_2024_w-sigs.pdf
         title: NISAR GCOV Product Specification
-    - title: Prerequisites
+    - title: Tutorial Set Up
       children:
         - file: notebooks/create_software_environment.ipynb
         - file: notebooks/set_up_Earthdata_Login.md
-    - title: Placeholder (unorganized notebooks)
+    - title: Data Access
+      children:
+        - file: notebooks/search_NISAR_GCOV_data.ipynb
+        - file: notebooks/load_subset_reproject_isce3.ipynb
+        - file: notebooks/load_subset_reproject_xr.ipynb
+    - title: Backscatter Tutorials
       children:
         - file: notebooks/NISAR_GCOV_Time_Series_Example.ipynb
         - file: notebooks/NISAR_GCOV_SARChangeDetectionMethods.ipynb
+    - title: PolSAR Tutorials
+      children:
+        - file: polSAR.ipynb
   jupyter:
     binder:
       url: "https://mybinder.org"

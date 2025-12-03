@@ -9,6 +9,7 @@ import dask.array as da
 from dask import delayed
 from collections.abc import Iterable
 from typing import Union, Any
+import rioxarray
 
 
 MetadataValue = Union[str, int, float, list[Any], dict[str, Any]]
@@ -261,7 +262,7 @@ def load_gcov_ts_xr(
     identification_stack = [_get_identification_metadata_dict(p) for p in gcov_paths]
     data_vars["identification"] = ("time", identification_stack)
 
-    return xr.Dataset(
+    ds = xr.Dataset(
         data_vars=data_vars,
         coords={
             "time": time,
@@ -270,7 +271,8 @@ def load_gcov_ts_xr(
             "x": x,
         },
         attrs={
-            "source": "NISAR L2 GCOV",
-            "projection": proj,
+            "source": "NISAR L2 GCOV"
         },
     )
+    
+    return ds.rio.write_crs(f"EPSG:{proj}")
