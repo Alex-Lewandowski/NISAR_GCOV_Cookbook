@@ -4,7 +4,7 @@
 [![Jupyter Book](https://img.shields.io/badge/Open-NISAR%20GCOV%20Cookbook-brightgreen?logo=jupyter)](https://asfopensarlab.github.io/NISAR_GCOV_Cookbook/)[![nightly-build](https://github.com/ProjectPythia/cookbook-template/actions/workflows/nightly-build.yaml/badge.svg)](https://github.com/ProjectPythia/cookbook-template/actions/workflows/nightly-build.yaml)
 [![Binder](https://binder.projectpythia.org/badge_logo.svg)](https://binder.projectpythia.org/v2/gh/ProjectPythia/cookbook-template/main?labpath=notebooks)
 
-:::{warning} This Jupyter Book is pre-release and under active development
+:::{warning} This Cookbook is pre-release and under active development
 
 As of writing (2025-12-04), NISAR L2 GCOV data are not yet available. The workflows in this Cookbook were created using proxy NISAR test data, available here:
 [https://science.nasa.gov/mission/nisar/sample-data/](https://science.nasa.gov/mission/nisar/sample-data/)
@@ -25,6 +25,14 @@ By introducing clear, hands-on examples, we hope to make the mission’s powerfu
 
 Lewandowski, Alex. White, Julia. (Several others will be added as we produce notebooks)
 
+<a href="https://github.com/ASFOpenSARlab/NISAR_GCOV_Cookbook/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=ASFOpenSARlab/NISAR_GCOV_Cookbook" />
+</a>
+
+## Contribute!
+
+This project is open source and developed in the open. Use, improve, and contribute to the NISAR GCOV Cookbook! See our [contributor's guide]() to learn how.
+
 ## Structure
 
 ### Section 1: About NISAR GCOV Data
@@ -34,7 +42,10 @@ Learn about NISAR GCOV data, its HDF5 structure, and its applications.
 Gain access to the data and set up required software environments for the included workflows.
 
 ### Section 3: Data Access
-Learn how to search, download, load, and work with GCOV data in Python.
+Learn how to search, download GCOV data
+
+### Section 4: Data Loading, Manipulation, and Visualization
+Learn how to load, work with, and create visualizations of GCOV data in Python.
 
 ### Section 3: Backscatter Tutorials
 Notebooks focusing on NISAR GCOV backscatter channels.
