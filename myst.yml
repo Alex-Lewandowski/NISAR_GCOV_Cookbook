@@ -35,6 +35,8 @@ project:
     - title: PolSAR Tutorials
       children:
         - file: notebooks/polSAR.ipynb
+    - file: CONTRIBUTING.md
+    
   jupyter:
     binder:
       url: "https://mybinder.org"
