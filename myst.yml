@@ -16,7 +16,7 @@ project:
       - file: notebooks/GCOV_intro.md
       - url: https://nisar.asf.earthdatacloud.nasa.gov/NISAR-SAMPLE-DATA/DOCS/NISAR_D-102274_RevE_NASA_SDS_Product_Specification_L2_GCOV_Nov8_2024_w-sigs.pdf
         title: NISAR GCOV Product Specification
-    - title: Tutorial Set Up
+    - title: Cookbook Set Up
       children:
         - file: notebooks/software_environment_docker.ipynb
         - file: notebooks/set_up_Earthdata_Login.md
