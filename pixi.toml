@@ -38,3 +38,6 @@ python = "==3.13"
 default = ["base"]
 isce3 = ["isce3"]
 
+[dependencies]
+asf_search = ">=3.2.1"
+
